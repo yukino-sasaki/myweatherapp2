@@ -1,0 +1,15 @@
+.weather_parent {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.weatherBox {
+  background-color: azure;
+  width: 60vw;
+  height: 50vh;
+  margin: 0 auto;
+  position: absolute;
+  top: 30px;
+  left: 20%;
+}
