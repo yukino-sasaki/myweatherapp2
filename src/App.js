@@ -6,7 +6,6 @@ import CurrentWeather from './currentWeather'
 
 const initialState ={
   currentData:[],
-  everyHourData:[],
   searchData:[],
 }
 
@@ -21,7 +20,7 @@ function App() {
     switch(action.type){
       case 'DISPLAY_WEATHER':
         return {...state, currentData: action.currentData}
-        
+      
        default: return
     }
   }
@@ -31,8 +30,8 @@ function App() {
     <Store.Provider value={{weatherData, setWeatherData}}>
     <div className="App">
       <Header />
-      <Axios />
       <CurrentWeather />
+      <Axios />
     </div>
     </Store.Provider>
   );

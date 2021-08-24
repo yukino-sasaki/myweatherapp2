@@ -2,6 +2,7 @@
   position: relative;
   display: flex;
   align-items: center;
+  height: 60vh;
 }
 
 .weatherBox {
@@ -12,4 +13,15 @@
   position: absolute;
   top: 30px;
   left: 20%;
+}
+
+.current_title {
+  font-weight: bold;
+  font-size: 30px;
+  margin: 0;
+  text-align: center;
+}
+
+.weather_icon {
+  margin: 3vh;
 }

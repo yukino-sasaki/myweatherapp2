@@ -1,11 +1,11 @@
-import React,{useContext, useEffect, } from 'react';
+import React,{useContext, useEffect, useState} from 'react';
 import axios from 'axios'
 import {Store} from './App'
-
+import WeeklyWeather from './3hweeklyweather'
 
 const Axios =()=>{
    const {weatherData, setWeatherData} = useContext(Store)
-  
+  const[everyHourData, setEveryHourData] =useState([])
     
 
 const API_KEY ='9e3abc90f5468c5fe36b56f86a48a8cd'
@@ -26,7 +26,7 @@ const success=  async (position)=>{
     const weekLink =`https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&units=metric&appid=9e3abc90f5468c5fe36b56f86a48a8cd&lang=ja`
      await axios.get(weekLink).then(res =>{
         console.log(res,'week')
-        
+        setEveryHourData(res.data)
     }).catch(err=>{
         console.log(err)
     })
@@ -47,7 +47,7 @@ useEffect(()=>{
 
     return(
         <div>
-            
+            <WeeklyWeather data={everyHourData}/>
         </div>
     )
 }
