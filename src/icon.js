@@ -17,7 +17,7 @@ const Icon =(props)=>{
             
     }}
 
-    console.log(iconSelect(props))
+    
     return(
         <div>
            

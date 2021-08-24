@@ -41,8 +41,3 @@ const EveryHourData =(props)=>{
 
 export default EveryHourData
 
-{/* <div className={Style.display_everyData}><div>
-                <div>{props.dateTime}</div>
-                <div>{props.weather}</div>
-                <div>{props.temp}</div>
-            </div>  </div>*/}

@@ -16,7 +16,7 @@ export const Store = createContext({
 function App() {
      
   const reducer =(state, action)=>{
-    console.log(action)
+    
     switch(action.type){
       case 'DISPLAY_WEATHER':
         return {...state, currentData: action.currentData}
