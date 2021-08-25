@@ -1,7 +1,7 @@
 import './App.css';
 import Header from './Header/header'
 import Axios from './axios'
-import React, {createContext,useState, useReducer} from 'react';
+import React, {createContext, useReducer} from 'react';
 import CurrentWeather from './currentWeather'
 
 const initialState ={

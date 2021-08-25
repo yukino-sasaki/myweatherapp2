@@ -48,7 +48,7 @@ const CurrentWeather =()=>{
             </div>
         </div>
 
-    ): (<span>no data</span>)
+    ): (<span></span>)
 }
 
 export default CurrentWeather

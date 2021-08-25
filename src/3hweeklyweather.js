@@ -20,7 +20,7 @@ const WeeklyWeather =()=>{
                 return <EveryHourData key ={index} dateTime={data.dt_txt} weather={data.weather[0].main} temp={data.main.temp} />
             })}
         </div>
-    ):(<div>no data</div>)
+    ):(<div></div>)
 }
 
 export default WeeklyWeather
