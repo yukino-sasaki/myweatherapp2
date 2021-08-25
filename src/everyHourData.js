@@ -1,5 +1,5 @@
-import React from 'react';
-import Style from './everyHourData.module.css'
+import React,{useContext} from 'react';
+import {Store} from './App'
 import { makeStyles } from '@material-ui/core/styles';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
@@ -20,6 +20,8 @@ const useStyles = makeStyles((theme) => ({
 
 
 const EveryHourData =(props)=>{
+  const {weatherData} = useContext(Store)
+  console.log(weatherData.EveryHourData)
   const classes = useStyles()
     return (
         
@@ -32,7 +34,7 @@ const EveryHourData =(props)=>{
             <Icon props={props.weather} size="30"/>
           </Avatar>
         </ListItemAvatar>
-        <ListItemText primary={`weather:  ${props.weather},     temprature: ${props.temp}`} secondary={props.dateTime} />
+        <ListItemText primary={`weather:  ${props.weather},     temperature: ${props.temp}`} secondary={props.dateTime} />
       </ListItem>
     </List>
        

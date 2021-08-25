@@ -6,7 +6,7 @@ import CurrentWeather from './currentWeather'
 
 const initialState ={
   currentData:[],
-  searchData:[],
+  everyHourData:[],
 }
 
 export const Store = createContext({
@@ -16,11 +16,12 @@ export const Store = createContext({
 function App() {
      
   const reducer =(state, action)=>{
-    
+    console.log(action, action.type)
     switch(action.type){
       case 'DISPLAY_WEATHER':
         return {...state, currentData: action.currentData}
-      
+      case 'EVERYHOURDATA_WEATHER':
+        return {...state, everyHourData: action.everyHourData}
        default: return
     }
   }
