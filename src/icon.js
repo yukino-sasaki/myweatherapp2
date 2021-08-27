@@ -2,7 +2,7 @@ import BeachAccessIcon from '@material-ui/icons/BeachAccess';
 import WbSunnyIcon from '@material-ui/icons/WbSunny';
 import CloudIcon from '@material-ui/icons/Cloud';
 import React from 'react';
-
+//アイコンの判別
 const Icon =(props)=>{
     
     const iconSelect =(prop)=>{

@@ -1,5 +1,4 @@
-import React,{useContext} from 'react';
-import {Store} from './App'
+import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
@@ -18,10 +17,8 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-
+//3時間ごとのデータ
 const EveryHourData =(props)=>{
-  const {weatherData} = useContext(Store)
-  console.log(weatherData.EveryHourData)
   const classes = useStyles()
     return (
         

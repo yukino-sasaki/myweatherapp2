@@ -8,10 +8,9 @@ import {Store} from './App'
 //axiosから
 const WeeklyWeather =()=>{
     const {weatherData} = useContext(Store)
-    console.log(weatherData)
-    
+   //現在の日時と比較してそれ以降のデータを表示する
     const dat = new Date()
-    console.log(dat.getTime())
+    
     return weatherData.everyHourData.list ? (
         <div>
             {weatherData.everyHourData.list.filter(deta =>{
@@ -24,7 +23,3 @@ const WeeklyWeather =()=>{
 }
 
 export default WeeklyWeather
-
-// {props.datmap(res=>{
-//                return  <div>{res}</div>
-//             })}

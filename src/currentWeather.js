@@ -4,11 +4,10 @@ import Style from './currentWeather.module.css'
 import RoomOutlinedIcon from '@material-ui/icons/RoomOutlined';
 import Icon from './icon'
 
-
+//現在の天気予報データ
 const CurrentWeather =()=>{
     const{weatherData} =useContext(Store)
    
-    //console.log(weatherData?.currentData)
  
     return weatherData && weatherData.currentData.coord ? (
         <div>
