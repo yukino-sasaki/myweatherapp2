@@ -84,7 +84,7 @@ const CurrentWeather = () => {
                 </span>
               </p>
               <div className={Style.box_layout}>
-                <div>
+                <div className={Style.weather_icon_size}>
                   <div className={Style.weather_icon}>
                     <Icon
                       props={weatherData.currentData.weather[0].main}
@@ -92,7 +92,7 @@ const CurrentWeather = () => {
                     />
                   </div>
                 </div>
-                <div className={Style.weather_font_style}>
+                <div className={Style.box_information}>
                   <div>
                     Weather:{" "}
                     <span className={Style.font_style}>

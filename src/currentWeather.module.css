@@ -51,6 +51,7 @@
 
 .box_information {
   width: 60%;
+  text-align: center;
 }
 
 .weather_icon {
@@ -68,5 +69,10 @@
 }
 
 .weather_font_style {
+  text-align: center;
+}
+
+.weather_icon_size {
+  width: 40%;
   text-align: center;
 }
