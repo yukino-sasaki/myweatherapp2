@@ -92,7 +92,7 @@ const CurrentWeather = () => {
                     />
                   </div>
                 </div>
-                <div className={Style.box_information}>
+                <div className={Style.weather_font_style}>
                   <div>
                     Weather:{" "}
                     <span className={Style.font_style}>
