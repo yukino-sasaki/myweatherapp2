@@ -6,6 +6,14 @@
   font-family: "Times New Roman", Times, serif;
 }
 
+.media_weather_parent {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 80vh;
+  font-family: "Times New Roman", Times, serif;
+}
+
 .weatherBox {
   background-color: azure;
   width: 60vw;
@@ -14,6 +22,15 @@
   position: absolute;
   top: 30px;
   left: 20%;
+}
+
+.media_weatherBox {
+  background-color: azure;
+  margin: 0 auto;
+  top: 30px;
+  left: 20%;
+  width: 70vw;
+  height: 500px;
 }
 
 .current_title {
@@ -28,7 +45,7 @@
 }
 
 .box_weather {
-  width: 40%;
+  width: 100%;
   padding: 10px;
 }
 
@@ -37,8 +54,7 @@
 }
 
 .weather_icon {
-  margin: 3vh;
-  text-align: center;
+  margin: 3vh auto;
 }
 
 .font_style {

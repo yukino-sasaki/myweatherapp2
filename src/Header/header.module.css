@@ -14,6 +14,12 @@
   margin-left: 2vw;
 }
 
+.media_header_text {
+  color: aliceblue;
+  font-size: 20px;
+  margin-left: 2vw;
+}
+
 .header_search {
   width: 80vw;
   display: flex;
